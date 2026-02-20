@@ -1,13 +1,19 @@
 package fabiocarlino.u5l14;
 
+import fabiocarlino.u5l14.Entities.User;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class U5l14Application {
 
-	public static void main(String[] args) {
-		SpringApplication.run(U5l14Application.class, args);
-	}
+
+    public static void main(String[] args) {
+        SpringApplication.run(U5l14Application.class, args);
+
+        User user = new User("Riccardo", "Corona");
+
+        System.out.println(user.getClass().getSimpleName());
+    }
 
 }
